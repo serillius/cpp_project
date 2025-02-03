@@ -1,0 +1,4 @@
+../Core/Src/retarget.c:19:6:RetargetInit	16	static
+../Core/Src/retarget.c:35:5:_write	32	static
+../Core/Src/retarget.c:66:5:_read	32	static
+../Core/Src/retarget.c:80:5:getentropy	16	static

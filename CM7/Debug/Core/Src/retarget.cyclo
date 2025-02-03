@@ -1,0 +1,4 @@
+../Core/Src/retarget.c:19:6:RetargetInit	1
+../Core/Src/retarget.c:35:5:_write	4
+../Core/Src/retarget.c:66:5:_read	3
+../Core/Src/retarget.c:80:5:getentropy	1

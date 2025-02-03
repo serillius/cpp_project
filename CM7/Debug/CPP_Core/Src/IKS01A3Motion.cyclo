@@ -1,0 +1,9 @@
+../CPP_Core/Src/IKS01A3Motion.cpp:10:1:IKS01A3_Motion::IKS01A3_Motion()	1
+../CPP_Core/Src/IKS01A3Motion.cpp:12:1:IKS01A3_Motion::~IKS01A3_Motion()	1
+../CPP_Core/Src/IKS01A3Motion.cpp:12:1:virtual IKS01A3_Motion::~IKS01A3_Motion()	1
+../CPP_Core/Src/IKS01A3Motion.cpp:14:6:void IKS01A3_Motion::enable(uint32_t, uint32_t)	1
+../CPP_Core/Src/IKS01A3Motion.cpp:18:6:void IKS01A3_Motion::getValue(uint32_t, uint32_t, int32_t*, int32_t*, int32_t*)	1
+../CPP_Core/Src/IKS01A3Motion.cpp:25:6:void IKS01A3_Motion::init(uint32_t, uint32_t)	1
+../CPP_Core/Src/IKS01A3Motion.cpp:29:6:void IKS01A3_Motion::setZero(uint32_t, uint32_t)	1
+../CPP_Core/Src/IKS01A3Motion.cpp:33:6:void IKS01A3_Motion::updateValues(uint32_t, uint32_t)	1
+../CPP_Core/Src/IKS01A3Motion.cpp:37:6:void IKS01A3_Motion::getAVGValues(int32_t*, int32_t*, int32_t*)	1

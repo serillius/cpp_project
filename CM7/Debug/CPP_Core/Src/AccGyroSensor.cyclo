@@ -1,0 +1,5 @@
+../CPP_Core/Src/AccGyroSensor.cpp:10:1:AccGyroSensor::~AccGyroSensor()	1
+../CPP_Core/Src/AccGyroSensor.cpp:10:1:virtual AccGyroSensor::~AccGyroSensor()	1
+../CPP_Core/Src/AccGyroSensor.cpp:12:6:void AccGyroSensor::initSensor()	1
+../CPP_Core/Src/AccGyroSensor.cpp:17:6:void AccGyroSensor::updateValues()	1
+../CPP_Core/Src/AccGyroSensor.cpp:22:6:void AccGyroSensor::setZero()	1

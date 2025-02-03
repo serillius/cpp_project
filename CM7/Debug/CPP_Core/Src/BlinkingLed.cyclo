@@ -1,0 +1,7 @@
+../CPP_Core/Inc/NonBlockingSystemTickDelay.h:16:3:myhal::NonBlockingSystemTickDelay::NonBlockingSystemTickDelay()	1
+../CPP_Core/Src/BlinkingLed.cpp:12:2:myhal::BlinkingLed::BlinkingLed()	1
+../CPP_Core/Src/BlinkingLed.cpp:13:2:myhal::BlinkingLed::~BlinkingLed()	1
+../CPP_Core/Src/BlinkingLed.cpp:13:2:virtual myhal::BlinkingLed::~BlinkingLed()	1
+../CPP_Core/Src/BlinkingLed.cpp:16:7:void myhal::BlinkingLed::processBlinking()	2
+../CPP_Core/Src/BlinkingLed.cpp:23:7:void myhal::BlinkingLed::setFrequency(float)	2
+../CPP_Core/Inc/NonBlockingSystemTickDelay.h:35:22:constexpr uint32_t myhal::myHelper::millToHz(T) [with T = float]	1
