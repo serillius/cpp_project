@@ -5,45 +5,50 @@
 
 #include "fonts.h"
 
-#include "BlinkingLed.h"
-#include "AccGyroSensor.h"
-#include "IKS01A3Motion.h"
-#include "OLEDSSD1306.h"
+#include "Package.h"
 
 #include "pool.h"
+#include "util_ring_allocator_std.h"
+#include <vector>
+#include <iterator>
 
 extern UART_HandleTypeDef huart3;
 extern I2C_HandleTypeDef hi2c2;
 
+//MY CODE STARTS HERE...
+//MY CODE ENDS HERE...
 
+float detectAndGetWeight() {
+	static uint8_t count = 1;
+	float Weight = 0.0;
+	Weight = static_cast<float>(count) / 2.0;
+	count++;
+	if (count > 30) count=1;
+	return Weight;
+}
 
 void cpp_main(){
 	RetargetInit(&huart3);
 
 	std::cout << "\n\r\n\rStart up\n\r" << std::endl;
 
-	auto led_pool = new k2lib::Pool<myhal::BlinkingLed,4>;
+	auto Mem_pool = new k2lib::Pool<Package,5>;
 
-	myhal::BlinkingLed *ld0 = led_pool->palloc();
-	myhal::BlinkingLed *ld1 = led_pool->palloc();
-	myhal::BlinkingLed *ld2 = led_pool->palloc();
-	myhal::BlinkingLed *ld3 = led_pool->palloc();
-
-	ld1->setPinPort(LD1_GPIO_Port, LD1_Pin);
-	ld2->setPinPort(LD2_GPIO_Port, LD2_Pin);
-	ld3->setPinPort(LD3_GPIO_Port, LD3_Pin);
-
-	ld1->setFrequency(4);
-	ld2->setFrequency(2);
-	ld3->setFrequency(1);
-
-//	myhal::BlinkingLed ld1(LD1_GPIO_Port, LD1_Pin, 4);
-//	myhal::BlinkingLed ld2(LD2_GPIO_Port, LD2_Pin, 2);
-//	myhal::BlinkingLed ld3(LD3_GPIO_Port, LD3_Pin, 1);
+	std::vector<Package*, util::ring_allocator_std<Package*>> conveyer_belt;
 
 	while(1){
-		ld1->processBlinking();
-		ld2->processBlinking();
-		ld3->processBlinking();
+		if (conveyer_belt.size() >= 3) {
+			conveyer_belt.pop_back();
+		}
+
+		float current_weight = detectAndGetWeight();
+		Package *package_item = Mem_pool->palloc();
+		package_item->setWeight(current_weight);
+		conveyer_belt.insert(conveyer_belt.begin(), package_item);
+
+		for (auto & element : conveyer_belt) {
+			std::cout << "Package Weight: ";
+			std::cout << element->getWeight() << std::endl;
+		}
 	}
 }

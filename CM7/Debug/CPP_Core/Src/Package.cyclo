@@ -1,0 +1,6 @@
+../CPP_Core/Src/Package.cpp:10:1:Package::Package()	1
+../CPP_Core/Src/Package.cpp:14:1:Package::Package(float)	1
+../CPP_Core/Src/Package.cpp:18:1:Package::~Package()	1
+../CPP_Core/Src/Package.cpp:18:1:virtual Package::~Package()	1
+../CPP_Core/Src/Package.cpp:23:7:float Package::getWeight()	1
+../CPP_Core/Src/Package.cpp:27:6:void Package::setWeight(float)	1

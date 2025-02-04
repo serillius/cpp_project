@@ -3,6 +3,7 @@
 "./CPP_Core/Src/IKS01A3Motion.o"
 "./CPP_Core/Src/NonBlockingSystemTickDelay.o"
 "./CPP_Core/Src/OLEDSSD1306.o"
+"./CPP_Core/Src/Package.o"
 "./CPP_Core/Src/STM32H7Led.o"
 "./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
 "./Core/Src/cpp_main.o"

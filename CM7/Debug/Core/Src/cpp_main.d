@@ -35,23 +35,9 @@ Core/Src/cpp_main.o: ../Core/Src/cpp_main.cpp ../Core/Inc/cpp_main.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h \
- ../Core/Inc/retarget.h ../Core/Inc/fonts.h ../CPP_Core/Inc/BlinkingLed.h \
- ../CPP_Core/Inc/NonBlockingSystemTickDelay.h \
- ../CPP_Core/Inc/STM32H7Led.h ../CPP_Core/Inc/AccGyroSensor.h \
- ../CPP_Core/Inc/IKS01A3Motion.h \
- ../../Drivers/BSP/IKS01A3/iks01a3_motion_sensors.h \
- ../X-CUBE-MEMS1/Target/iks01a3_conf.h ../Core/Inc/stm32h7xx_nucleo_bus.h \
- ../Core/Inc/stm32h7xx_nucleo_conf.h ../Core/Inc/stm32h7xx_nucleo_errno.h \
- ../Core/Inc/stm32h7xx_nucleo_errno.h \
- ../../Drivers/BSP/Components/Common/motion_sensor.h \
- ../../Drivers/BSP/Components/lsm6dso/lsm6dso.h \
- ../../Drivers/BSP/Components/lsm6dso/lsm6dso_reg.h \
- ../../Drivers/BSP/Components/lis2dw12/lis2dw12.h \
- ../../Drivers/BSP/Components/lis2dw12/lis2dw12_reg.h \
- ../../Drivers/BSP/Components/lis2mdl/lis2mdl.h \
- ../../Drivers/BSP/Components/lis2mdl/lis2mdl_reg.h \
- ../CPP_Core/Inc/IKS01A3Motion.h ../CPP_Core/Inc/OLEDSSD1306.h \
- ../Core/Inc/ssd1306.h ../Core/Inc/fonts.h ../CPP_Core/Inc/pool.h
+ ../Core/Inc/retarget.h ../Core/Inc/fonts.h ../CPP_Core/Inc/Package.h \
+ ../CPP_Core/Inc/pool.h ../Core/Inc/util_ring_allocator_std.h \
+ ../Core/Inc/util_alignas.h
 ../Core/Inc/cpp_main.h:
 ../Core/Inc/main.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
@@ -91,26 +77,7 @@ Core/Src/cpp_main.o: ../Core/Src/cpp_main.cpp ../Core/Inc/cpp_main.h \
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h:
 ../Core/Inc/retarget.h:
 ../Core/Inc/fonts.h:
-../CPP_Core/Inc/BlinkingLed.h:
-../CPP_Core/Inc/NonBlockingSystemTickDelay.h:
-../CPP_Core/Inc/STM32H7Led.h:
-../CPP_Core/Inc/AccGyroSensor.h:
-../CPP_Core/Inc/IKS01A3Motion.h:
-../../Drivers/BSP/IKS01A3/iks01a3_motion_sensors.h:
-../X-CUBE-MEMS1/Target/iks01a3_conf.h:
-../Core/Inc/stm32h7xx_nucleo_bus.h:
-../Core/Inc/stm32h7xx_nucleo_conf.h:
-../Core/Inc/stm32h7xx_nucleo_errno.h:
-../Core/Inc/stm32h7xx_nucleo_errno.h:
-../../Drivers/BSP/Components/Common/motion_sensor.h:
-../../Drivers/BSP/Components/lsm6dso/lsm6dso.h:
-../../Drivers/BSP/Components/lsm6dso/lsm6dso_reg.h:
-../../Drivers/BSP/Components/lis2dw12/lis2dw12.h:
-../../Drivers/BSP/Components/lis2dw12/lis2dw12_reg.h:
-../../Drivers/BSP/Components/lis2mdl/lis2mdl.h:
-../../Drivers/BSP/Components/lis2mdl/lis2mdl_reg.h:
-../CPP_Core/Inc/IKS01A3Motion.h:
-../CPP_Core/Inc/OLEDSSD1306.h:
-../Core/Inc/ssd1306.h:
-../Core/Inc/fonts.h:
+../CPP_Core/Inc/Package.h:
 ../CPP_Core/Inc/pool.h:
+../Core/Inc/util_ring_allocator_std.h:
+../Core/Inc/util_alignas.h:
